@@ -8,7 +8,14 @@ ENV pthreadsVersion="2.0.10"
 VOLUME /storage
 
 RUN yum -y update
-RUN yum -y install wget nano mc mlocate tar sendmail mailx expect
+RUN yum -y install wget 
+RUN yum -y install nano
+RUN yum -y install mc
+RUN yum -y install mlocate
+RUN yum -y install tar
+RUN yum -y install sendmail
+RUN yum -y install mailx
+RUN yum -y install expect
 RUN yum -y install epel-release
 RUN yum -y install pigz
 RUN yum -y groupinstall 'Development Tools'
