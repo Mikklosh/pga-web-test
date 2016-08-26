@@ -8,18 +8,11 @@ ENV pthreadsVersion="2.0.10"
 VOLUME /storage
 
 RUN yum -y update
-RUN sudo yum -y install wget 
-RUN sudo yum -y install nano
-RUN sudo yum -y install mc
-RUN sudo yum -y install mlocate
-RUN sudo yum -y install tar
-RUN sudo yum -y install sendmail
-RUN sudo yum -y install mailx
-RUN sudo yum -y install expect
-RUN sudo yum -y install epel-release
-RUN sudo yum -y install pigz
-RUN sudo yum -y groupinstall 'Development Tools'
-RUN sudo yum -y install pcre pcre-devel openssl openssl-devel GeoIP geoip-devel libxml2 libxml2-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libmcrypt libmcrypt-devel aspell aspell-devel readline readline-devel recode recode-devel libxslt libxslt-devel tidy libtidy-devel
+RUN yum -y install nano mc mlocate tar sendmail mailx expect
+RUN yum -y install epel-release
+RUN yum -y install pigz
+RUN yum -y groupinstall 'Development Tools'
+RUN yum -y install pcre pcre-devel openssl openssl-devel GeoIP geoip-devel libxml2 libxml2-devel bzip2 bzip2-devel libcurl libcurl-devel libpng libpng-devel libmcrypt libmcrypt-devel aspell aspell-devel readline readline-devel recode recode-devel libxslt libxslt-devel tidy libtidy-devel
 
 ADD ./sysctl/sysctl.conf /etc/sysctl.conf
 RUN mkdir /src
