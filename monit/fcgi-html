@@ -1,0 +1,6 @@
+check process fcgi-html with pidfile /var/run/munin/spawn-fcgi-munin-html.pid
+group fcgi-html
+start program = "/etc/init.d/fcgi-html start"
+stop program = "/etc/init.d/fcgi-html stop"
+if failed unixsocket /var/run/munin/spawn-fcgi-munin-html.sock then restart
+if 5 restarts within 5 cycles then timeout

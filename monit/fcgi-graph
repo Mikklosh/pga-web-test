@@ -1,0 +1,6 @@
+check process fcgi-graph with pidfile /var/run/munin/spawn-fcgi-munin-graph.pid
+group fcgi-graph
+start program = "/etc/init.d/fcgi-graph start"
+stop program = "/etc/init.d/fcgi-graph stop"
+if failed unixsocket /var/run/munin/spawn-fcgi-munin-graph.sock then restart
+if 5 restarts within 5 cycles then timeout
