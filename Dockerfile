@@ -1,4 +1,4 @@
-FROM centos:6.7
+FROM centos:6.8
 MAINTAINER G5 <admins@g5e.com>
 
 ENV nginxVersion="1.8.1"
