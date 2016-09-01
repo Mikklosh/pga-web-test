@@ -60,6 +60,7 @@ ADD ./vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf
 RUN chkconfig vsftpd on
 
 RUN yum install munin munin-node spawn-fcgi -y
+RUN ln -s /usr/share/munin/plugins/mysql_bytes  /etc/munin/plugins/mysql_bytes && ln -s /usr/share/munin/plugins/mysql_queries  /etc/munin/plugins/mysql_queries &&ln -s /usr/share/munin/plugins/mysql_slowqueries  /etc/munin/plugins/mysql_slowqueries && ln -s /usr/share/munin/plugins/mysql_threads  /etc/munin/plugins/mysql_threads
 ADD ./spawn-fcgi/fcgi-graph /etc/init.d/fcgi-graph
 ADD ./spawn-fcgi/fcgi-html /etc/init.d/fcgi-html
 RUN rm -f /etc/munin/munin.conf
