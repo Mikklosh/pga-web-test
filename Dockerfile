@@ -3,12 +3,14 @@ MAINTAINER G5 <admins@g5e.com>
 
 ENV nginxVersion="1.8.1"
 ENV phpVersion="5.6.19"
+ENV dbdmysqlVersion="4.033"
 ENV pthreadsVersion="2.0.10"
+ENV phpmyadminVersion="4.6.0"
 
 VOLUME /storage
 
 RUN yum -y update
-RUN yum -y install wget nano mc mlocate tar sendmail mailx expect
+RUN yum -y install wget nano mc mlocate tar sendmail mailx expect htop
 RUN yum -y install epel-release
 RUN yum -y install pigz
 RUN yum -y groupinstall 'Development Tools'
@@ -39,6 +41,18 @@ ADD ./php/php-fpm.conf /etc/php-fpm.conf
 RUN rm -f /etc/php.ini
 ADD ./php/php.ini /etc/php.ini
 RUN chkconfig php-fpm on
+
+RUN yum -y install http://www.percona.com/downloads/percona-release/redhat/0.1-3/percona-release-0.1-3.noarch.rpm && yum -y install Percona-Server-server-56 Percona-Server-devel-56 Percona-Server-client-56 Percona-Server-shared-56
+RUN yum -y install perl-DBI perl-devel
+RUN cd /src/ && wget http://www.cpan.org/authors/id/C/CA/CAPTTOFU/DBD-mysql-$dbdmysqlVersion.tar.gz && tar xvzf DBD-mysql-$dbdmysqlVersion.tar.gz && cd /src/DBD-mysql-$dbdmysqlVersion && perl Makefile.PL && make && make install
+RUN wget -P /src/ https://files.phpmyadmin.net/phpMyAdmin/$phpmyadminVersion/phpMyAdmin-$phpmyadminVersion-all-languages.tar.gz && tar xvzf /src/phpMyAdmin-$phpmyadminVersion-all-languages.tar.gz -C /usr/share && mv /usr/share/phpMyAdmin-$phpmyadminVersion-all-languages /usr/share/phpMyAdmin && ln -s /usr/share/phpMyAdmin /usr/share/phpmyadmin && rm -rf /usr/share/phpmyadmin/setup
+ADD	./phpmyadmin/config.inc.php /usr/share/phpMyAdmin/config.inc.php
+ADD ./mysql/my.cnf /storage/conf/mysql/my.cnf
+RUN rm -f /etc/my.cnf
+RUN mv /var/lib/mysql /var/lib/mysql.bak
+RUN ln -s /storage/conf/mysql/my.cnf /etc/my.cnf
+RUN ln -s /storage/mysql /var/lib/mysql
+RUN chkconfig mysql on
 
 RUN yum -y install ftp vsftpd
 RUN rm -f /etc/vsftpd/vsftpd.conf
