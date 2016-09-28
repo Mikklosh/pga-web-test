@@ -1,8 +1,8 @@
 FROM centos:6.8
 MAINTAINER G5 <admins@g5e.com>
 
-ENV nginxVersion="1.8.1"
-ENV phpVersion="5.6.19"
+ENV nginxVersion="1.10.1"
+ENV phpVersion="5.6.24"
 ENV dbdmysqlVersion="4.033"
 ENV pthreadsVersion="2.0.10"
 ENV phpmyadminVersion="4.6.0"
@@ -10,7 +10,7 @@ ENV phpmyadminVersion="4.6.0"
 VOLUME /storage
 
 RUN yum -y update
-RUN yum -y install wget nano mc mlocate tar sendmail mailx expect htop
+RUN yum -y install wget nano mc mlocate tar sendmail mailx expect
 RUN yum -y install epel-release
 RUN yum -y install pigz
 RUN yum -y groupinstall 'Development Tools'
