@@ -83,11 +83,11 @@ ADD ./monit/fcgi-graph /etc/monit.d/fcgi-graph
 ADD ./monit/fcgi-html /etc/monit.d/fcgi-html
 RUN chkconfig monit on
 
+ADD ./iptables/ /etc/sysconfig/iptables
 ADD ./logrotate.d/nginx /etc/logrotate.d/nginx
 ADD ./src/run.sh /src/run.sh
-ADD ./src/users_pwd.sh /src/users_pwd.sh
-ADD ./src/webmin_setup.sh /src/webmin_setup.sh
-RUN chmod +x /src/run.sh && chmod +x /src/users_pwd.sh && chmod +x /src/webmin_setup.sh
+ADD ./src/scripts /src/scripts
+RUN chmod +x /src/run.sh
 RUN yum clean all
 RUN updatedb
 
