@@ -83,7 +83,6 @@ ADD ./monit/fcgi-graph /etc/monit.d/fcgi-graph
 ADD ./monit/fcgi-html /etc/monit.d/fcgi-html
 RUN chkconfig monit on
 
-ADD ./iptables/ /etc/sysconfig/iptables
 ADD ./logrotate.d/nginx /etc/logrotate.d/nginx
 ADD ./src/run.sh /src/run.sh
 ADD ./src/scripts /src/scripts
