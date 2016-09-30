@@ -18,6 +18,7 @@ RUN yum -y install pcre pcre-devel openssl openssl-devel GeoIP geoip-devel libxm
 
 ADD ./sysctl/sysctl.conf /etc/sysctl.conf
 RUN mkdir /src
+RUN mkdir /TEMP
 
 ADD ./webmin/webmin.repo /etc/yum.repos.d/webmin.repo
 RUN wget -P /etc/yum.repos.d/ http://www.webmin.com/jcameron-key.asc && rpm --import /etc/yum.repos.d/jcameron-key.asc
@@ -48,6 +49,7 @@ RUN cd /src/ && wget http://www.cpan.org/authors/id/C/CA/CAPTTOFU/DBD-mysql-$dbd
 RUN wget -P /src/ https://files.phpmyadmin.net/phpMyAdmin/$phpmyadminVersion/phpMyAdmin-$phpmyadminVersion-all-languages.tar.gz && tar xvzf /src/phpMyAdmin-$phpmyadminVersion-all-languages.tar.gz -C /usr/share && mv /usr/share/phpMyAdmin-$phpmyadminVersion-all-languages /usr/share/phpMyAdmin && ln -s /usr/share/phpMyAdmin /usr/share/phpmyadmin && rm -rf /usr/share/phpmyadmin/setup
 ADD	./phpmyadmin/config.inc.php /usr/share/phpMyAdmin/config.inc.php
 ADD ./mysql/my.cnf /storage/conf/mysql/my.cnf
+ADD ./phpmyadmin/servers.txt /TEMP/servers.txt
 RUN rm -f /etc/my.cnf
 RUN mv /var/lib/mysql /var/lib/mysql.bak
 RUN ln -s /storage/conf/mysql/my.cnf /etc/my.cnf

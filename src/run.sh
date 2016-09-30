@@ -52,6 +52,8 @@ sed -i "s/ENV_PRJ_NAME/$ENV_PRJ_NAME/g" /storage/conf/nginx/vhosts/pgaprj.conf
 
 #Setup PhpMyAdmin
 sed -i "s/ENV_BLOWFISH_SECRET/$ENV_BLOWFISH_SECRET/g" /usr/share/phpMyAdmin/config.inc.php
+sed -i 's/localhost/pga-web/g' /usr/share/phpMyAdmin/config.inc.php
+cat /TEMP/servers.txt  >> /usr/share/phpMyAdmin/config.inc.php
 
 #Webmin configuration
 sed -i "s/ENV_WEBMIN_ADMIN/$ENV_WEBMIN_ADMIN/g" $SCRIPTS_FOLDER/webmin_setup.sh

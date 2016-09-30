@@ -1,0 +1,240 @@
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-mapg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-mapg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-lfnpg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-lfnpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-btp';
+ $cfg['Servers'][$i]['host'] = 'pga-master-btp.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-survivors';
+ $cfg['Servers'][$i]['host'] = 'pga-master-survivors.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-hc';
+ $cfg['Servers'][$i]['host'] = 'pga-master-hc.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-sofpg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-sofpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-tps';
+ $cfg['Servers'][$i]['host'] = 'pga-master-tps.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-sed';
+ $cfg['Servers'][$i]['host'] = 'pga-master-sed.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-smmpg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-smmpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-ticpg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-ticpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-master-nftdpg';
+ $cfg['Servers'][$i]['host'] = 'pga-master-nftdpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-ddp';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-ddp.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-hsp';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-hsp.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-vcp ';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-vcp.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-survivors';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-survivors.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-mapg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-mapg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-lfnpg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-lfnpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-hc';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-hc.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-sofpg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-sofpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = ' pga-slave-sed';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-ddp.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-smmpg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-smmpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-ticpg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-ticpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-tps';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-tps.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
+
+$i++;
+ $cfg['Servers'][$i]['verbose'] = 'pga-slave-nftdpg';
+ $cfg['Servers'][$i]['host'] = 'pga-slave-nftdpg.g5e.com';
+ $cfg['Servers'][$i]['port'] = '';
+ $cfg['Servers'][$i]['socket'] = '';
+ $cfg['Servers'][$i]['connect_type'] = 'tcp';
+ $cfg['Servers'][$i]['extension'] = 'mysqli';
+ $cfg['Servers'][$i]['auth_type'] = 'cookie';
+ $cfg['Servers'][$i]['AllowNoPassword'] = false;
